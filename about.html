@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+  <link rel="stylesheet" href="stylesAbout.css">
+</head>
+
+<button onclick="darkMode()">🌙</button>
+<script>
+function darkMode() {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+        localStorage.setItem("darkMode", "on");
+    } else {
+        localStorage.setItem("darkMode", "off");
+    }
+}
+if (localStorage.getItem("darkMode") === "on") {
+    document.body.classList.add("dark");
+}
+</script>
+
+
+<body>
+    <header>
+        <h1 id="title">About Me</h1>
+    </header>
+
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+
+    </nav>
+
+    <main>
+        <section>Halo semuanya! Perkenalkan, nama saya Made Marielle Ayoeditha.
+          <p id="intro">
+             Saya kelas 7 CHIS Cyber School dan saya berumur 12 tahun.
+        Saya adalah seorang siswa yang cukup suka mencoba hal-hal baru.
+        Saya memiliki beberapa hobi, seperti memasak, membuat kue,
+        menggambar, dan belajar coding.
+          </p>
+        <p id="intro">
+            Kalau sedang punya waktu luang, saya biasanya suka mendengarkan
+        musik, bermain game, atau mencoba membuat sesuatu yang baru.
+        Saya juga senang belajar hal-hal yang menurut saya menarik,
+        walaupun kadang kalau sudah bosan bisa ditinggal dulu.
+        </p>
+        <p id="intro">
+            Saya juga suka makanan dan cukup sering mencoba membuat berbagai
+        macam makanan atau kue. Dari kegiatan tersebut, saya jadi belajar
+        untuk lebih sabar dan teliti. Selain itu, saya juga tertarik dengan
+        dunia coding karena saya ingin mengetahui bagaimana sebuah website
+        bisa dibuat dari kode.</p>
+        <p id="intro">
+            Ke depannya, saya ingin terus belajar dan mencoba banyak hal baru.
+        Saya tidak harus langsung menjadi ahli dalam sesuatu, yang penting
+        saya terus berkembang dan tidak takut untuk mencoba. Bagi saya,
+        setiap pengalaman baru pasti bisa memberikan sesuatu yang berguna.
+        </p>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Made with ♡ by Marielle &copy; 2026</p>
+    </footer>
+
+</body>
+
+
+</html>
